@@ -1,0 +1,35 @@
+{
+    "name": "lufeijun1234/minlaravel",
+    "type": "project",
+    "description": "The min-Laravel Framework.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lufeijun1234",
+            "email": "lufeijun_1234@126.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "lufeijun1234/min-laravel-framework": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/lufeijun1234/Documents/soft/frame/laravel/mylaravel/minlaravelframework/framework"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
