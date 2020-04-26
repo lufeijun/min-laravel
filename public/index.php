@@ -31,17 +31,13 @@ echo '<pre>';
 
 $response = $kernel->handle( Lufeijun1234\Http\Request::capture() );
 
-//$response = $kernel->handle(
-//	$request = Illuminate\Http\Request::capture()
-//);
 
 
-echo env('APP_NAME') , '<br>';
-echo getenv('APP_NAME') , '<br>';
-echo $_ENV['APP_NAME'] , '<br>';
-echo $_SERVER['APP_NAME'] , '<br>';
 
-print_r( $_ENV );
-print_r( $_SERVER );
+echo "配置文件参数:<br>";
+echo config('app.aa'),'<br>';
+
+echo config('custom.city.city')[0];
+
 
 echo "<br>finally";
