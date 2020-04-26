@@ -21,24 +21,20 @@ echo "<pre>";
  */
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-$event  = $app->make("events");
+
+// 解析出 http 请求处理内核
+$kernel = $app->make(Lufeijun1234\Contracts\Http\KernelContract::class);
 
 
-//// 绑定事件名称 和 闭包函数
-$event->listen('order',function( $a , $b ){
-	echo "<hr>";
-	echo $a, "<br>";
-	echo $b, "<br>";
-	echo "<hr>";
-});
-// 字符串名称触发
-$event->dispatch("order",[1,11,22]);
+echo '<pre>';
 
 
-// 绑定事件名称 和 类字符串
-$event->listen(App\Events\OrderEvent::class,App\Listeners\OrderListenerOne::class);
-$one = new App\Events\OrderEvent(1);
-$event->dispatch($one,[1,11,22]);
+$response = $kernel->handle( Lufeijun1234\Http\Request::capture() );
+
+//$response = $kernel->handle(
+//	$request = Illuminate\Http\Request::capture()
+//);
+
 
 
 echo "<br>finally";

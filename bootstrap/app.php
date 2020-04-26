@@ -28,10 +28,10 @@ $app = new Lufeijun1234\Foundation\Application(
 */
 
 
-//$app->singleton(
-//	Illuminate\Contracts\Http\Kernel::class,
-//	App\Http\Kernel::class
-//);
+$app->singleton(
+	Lufeijun1234\Contracts\Http\KernelContract::class,
+	App\Http\Kernel::class
+);
 //
 //$app->singleton(
 //	Illuminate\Contracts\Console\Kernel::class,
