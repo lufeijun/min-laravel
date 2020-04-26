@@ -36,5 +36,12 @@ $response = $kernel->handle( Lufeijun1234\Http\Request::capture() );
 //);
 
 
+echo env('APP_NAME') , '<br>';
+echo getenv('APP_NAME') , '<br>';
+echo $_ENV['APP_NAME'] , '<br>';
+echo $_SERVER['APP_NAME'] , '<br>';
+
+print_r( $_ENV );
+print_r( $_SERVER );
 
 echo "<br>finally";
