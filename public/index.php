@@ -7,6 +7,8 @@
  * @author   lufeijun1234 <lufeijun_1234@126.com>
  */
 
+use Facades\App\Events\OrderEvent;
+
 define('LARAVEL_START', microtime(true));
 
 /**
@@ -34,10 +36,22 @@ $response = $kernel->handle( Lufeijun1234\Http\Request::capture() );
 
 
 
-echo "配置文件参数:<br>";
-echo config('app.aa'),'<br>';
 
-echo config('custom.city.city')[0];
+var_dump(Str::contains("hellow", 'he'));
+
+
+echo( App::make("config")->get('app.timezone') );
+
+echo "<hr>";
+
+$a = new OrderEvent(1);
+
+
+echo OrderEvent::getId();
+
+
+
+echo '<hr>';
 
 
 echo "<br>finally";
