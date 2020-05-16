@@ -13,4 +13,13 @@ return [
 
 	],
 
+
+
+	// 服务提供者
+	'providers' => [
+		App\Providers\AppServiceProvider::class,
+		App\Providers\TestServiceProvider::class,
+
+	],
+
 ];
