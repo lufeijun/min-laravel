@@ -10,7 +10,6 @@ class TestServiceProvider extends ServiceProvider implements DeferrableProvider
 
 	public function register()
 	{
-		echo "provides register<br>";
 
 		$this->app->singleton('testService', function (){
 			return function (){
@@ -23,7 +22,6 @@ class TestServiceProvider extends ServiceProvider implements DeferrableProvider
 
 	public function boot()
 	{
-		echo "provides boot<br>";
 	}
 
 

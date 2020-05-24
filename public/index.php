@@ -28,30 +28,12 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 $kernel = $app->make(Lufeijun1234\Contracts\Http\KernelContract::class);
 
 
-echo '<pre>';
-
-
 $response = $kernel->handle( Lufeijun1234\Http\Request::capture() );
 
 
+$response->send();
 
 
-
-var_dump(Str::contains("hellow", 'he'));
-
-
-echo( App::make("config")->get('app.timezone') );
-
-echo "<hr>";
-
-$a = new OrderEvent(1);
-
-
-echo OrderEvent::getId();
-
-
-
-echo '<hr>';
 
 
 echo "<br>finally";
