@@ -12,6 +12,7 @@ return [
 		'Str' => Lufeijun1234\Support\Str::class,
 		'Route' => Lufeijun1234\Facades\Route::class,
 		'Request' => Lufeijun1234\Facades\Request::class,
+		'Log' => Lufeijun1234\Facades\Log::class,
 	],
 
 

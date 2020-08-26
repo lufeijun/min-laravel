@@ -33,7 +33,14 @@ $response = $kernel->handle( Lufeijun1234\Http\Request::capture() );
 
 $response->send();
 
+// 日志
+$log = $app['log'];
 
+$log->log('error',"日志",[]);
+
+$log->info("日志");
+
+\Log::debug("日志");
 
 
 echo "<br>finally";
