@@ -2,7 +2,10 @@
 
 
 Route::get('/', function () {
-	echo "ok";
+
+//	throw new Exception('开始异常');
+
+//	echo 1/0;
 
 	return '111';
 });

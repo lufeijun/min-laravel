@@ -5,6 +5,10 @@ return [
 
 	'timezone' => 'Asia/Shanghai',
 
+	'env' => env('APP_ENV', 'production'),
+
+	'debug' => (bool) env('APP_DEBUG', false),
+
 
 	// Facades 用到的别名问题
 	'aliases' => [

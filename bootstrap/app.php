@@ -38,10 +38,10 @@ $app->singleton(
 //	App\Console\Kernel::class
 //);
 //
-//$app->singleton(
-//	Illuminate\Contracts\Debug\ExceptionHandler::class,
-//	App\Exceptions\Handler::class
-//);
+$app->singleton(
+	Lufeijun1234\Contracts\Debug\ExceptionHandler::class,
+	App\Exceptions\Handler::class
+);
 
 
 
