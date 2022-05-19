@@ -27,16 +27,15 @@ $app = new Lufeijun1234\Foundation\Application(
 |
 */
 
-
 $app->singleton(
 	Lufeijun1234\Contracts\Http\KernelContract::class,
 	App\Http\Kernel::class
 );
 //
-//$app->singleton(
-//	Illuminate\Contracts\Console\Kernel::class,
-//	App\Console\Kernel::class
-//);
+$app->singleton(
+	Lufeijun1234\Contracts\Console\Kernel::class,
+	App\Console\Kernel::class
+);
 //
 $app->singleton(
 	Lufeijun1234\Contracts\Debug\ExceptionHandler::class,
