@@ -24,7 +24,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "/Users/lufeijun1234/Documents/soft/frame/laravel/mylaravel/minlaravelframework/framework"
+            "url": "/Users/lufeijun1234/Documents/soft/frame/laravel/mylaravel2022/min-laravel-framework"
         }
     ],
     "autoload-dev": {
